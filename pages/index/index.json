@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "section-list": "../../component/section-list/section-list"
+  }
+}

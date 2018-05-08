@@ -1,0 +1,29 @@
+.login-wrapper {  
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525670355317&di=abd5bac5a5c82e3e3ea2f780bd905f5b&imgtype=0&src=http%3A%2F%2Fimg1.qunarzz.com%2Fwugc%2Fp140%2F201207%2F24%2Fa58340b64ce0263593835fbb.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+}
+  .close-icon {
+    position: fixed;
+    width: 1rem;
+    height: 1rem;
+    top: 1rem;
+    left: 1rem;
+    padding: .5rem;
+  }
+  .login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+    .app-logo {
+      width: 3rem;
+      height: 3rem;
+    }

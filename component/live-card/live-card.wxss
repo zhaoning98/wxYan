@@ -1,0 +1,123 @@
+/* component/live-card/live-card.wxss */
+.live-card-item {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.card-img-wrpper {
+  position: relative;
+  display:inline-block;
+  width: 100%;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  padding: 53% 0 0;
+  background: #ccc;
+}
+.card-status:before {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  top: 12%;
+  left: 0;
+  padding: 0 .8em;
+  font-size: .8rem;
+  height: 1.3rem;
+  line-height: 1.42rem;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  color: #ffffff;
+}
+.card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.count-down-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  z-index: 1;
+  display: none;
+}
+.card-body {
+  padding: 0 .8rem;
+  box-sizing: border-box;
+}
+  .card-title,
+  .start-time {
+    overflow:hidden;  
+    text-overflow:ellipsis;  
+    display:-webkit-box;  
+    -webkit-line-clamp:1;  
+    -webkit-box-orient:vertical; 
+    color: #353535;
+    font-size: 11pt;
+  }
+  .start-time,
+  .card-detail {
+    color: #888888;
+    font-size: 9pt;
+    padding-top: .15rem;
+    padding-bottom: .4rem;
+  }
+  .card-detail {
+    display: flex;
+    justify-content: space-between;
+  }
+    .view-num {
+      position: relative;
+      padding-left: 1.2rem;
+    }
+    .view-num::before {
+      content: "";
+      position: absolute;
+      top: .3rem;
+      left: 0;
+      display: inline-block;
+      width: .8rem;
+      height: .8rem;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjg2MDhFOTAxMkU0MDExRThBQTI0RTg2NTYxMjkzQzJEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjg2MDhFOTAyMkU0MDExRThBQTI0RTg2NTYxMjkzQzJEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODYwOEU4RkYyRTQwMTFFOEFBMjRFODY1NjEyOTNDMkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ODYwOEU5MDAyRTQwMTFFOEFBMjRFODY1NjEyOTNDMkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7aBUiuAAADrklEQVR42uyXe2hOYRzHzzublTYya5uWS2HIfchblOtQbnNXxBSLFpaphZqmJmtGLrOZaMM/FKZcYkzYXMrdH7Y/3DIRhu0dsdle3199j55OzznnHTX7w68+nfM857n83t/z/C6vx+/3G/9agow2IG1CieDCwsKWKDwaTAMjwQAQAUJAI/gEnoK74By4AZrcFk1OTjaCA9g8FKwG60BPmzGiSDQZBzaA12Af+eZoCRcFpoJ8zebyix+Cd6AOhIMYMJgW8oBuIBusBWvA6ZYq0Q7sAKlK3wuwF5wAbxwU7wrmcuM4EAtOgQJasyGQixnKSaYCdcqCu1wUEHnLI+gvRw4+s38VOA86uCkhZ1sCZrJ9Hwzjoj8tFpRfu58Ky3OOxbLN4CCP6Bb7JoKzoL3TceTxHohcBTPAV8uYQTySfpZ+ubyVYAF4ovRXgwmcI+uNB4fBEp0lloKVfC8H0zUK9OU3U4Ef4BWfBvvLOU6V72AeKGV7sbLXbyXk8uzhu7hWoo1bFYGOfN8KIuk5kWwb/F6kmdtAKz1nOxd0V5WQC9eJ72KmGs0iEqi8fM8CW0A92/VsZ7Ht5XirfKEV/HTr3aYSo8B8DjoArtvc+gTlCLJtxmQrR5NgM+Y2755IIiK2V5RIYYecf4aD68Xy+Qz4bMb4+F0dr5NMxYqposQUNo6B9w4TQ/hsdIkTjZbxOvkIik2LiRJRbDxq5eRpunFEECOiSO9WViKOz1pR4goby0DYX5o50GML434iZUEMySJdwHqHiWbO6EX30kk4vxsuOSaN+4kUiBJlRGQT6GMzsVRJcOk2Y9L5XR1vaKLuRr7flHFmsEqhf8sCR6wJhlJBHxfZTDcLU8ybyX4zFlRo1pB1j3IfSXBpqKz8phKVStj1Mvd7NIskKRc5g672ks8MJfUnaebKeodYGorkmD9KTWDbwQW+L2d6tipSBcZQafNoeihHUMnvVZoiKV/JnHfUwGjN/4vANTCURUg0Faq1+Lek81msD2JY5omXnbHUHQaL4WJmZTPiJqoVlrWeEFNOZgU0AswG8ayySpRxstFJYice5qSdSggXC02i0o7l3QcwlkWIQXNLkXqPVolwiROS1leAB+C4osBFZtbqQAtdqSUW8o7kcOF4VkTNPJLHVNjH+BDFUm6g5cf56DV5nNvikr+IVkjlHYnhBkOIk9Swxsyl9/zx/w6Dl1JiwDb+sZEadDir6c4M003ctIrF8SVwWVfeay/P/3/lbUmJXwIMAMRB2813geHKAAAAAElFTkSuQmCC);
+    }
+    .comment-num {
+      position: relative;
+      padding-right: 1.2rem;
+    }
+    .comment-num::before {
+      content: "";
+      position: absolute;
+      top: .3rem;
+      right: 0;
+      display: inline-block;
+      width: .8rem;
+      height: .8rem;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjcxNjlDNEUwMkU0MTExRThBQTI0RTg2NTYxMjkzQzJEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjcxNjlDNEUxMkU0MTExRThBQTI0RTg2NTYxMjkzQzJEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NzE2OUM0REUyRTQxMTFFOEFBMjRFODY1NjEyOTNDMkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzE2OUM0REYyRTQxMTFFOEFBMjRFODY1NjEyOTNDMkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz73rB0rAAABzElEQVR42uyXvUsDMRjGr+VUXHRwcFIH/wE3FS1CQSviVwVFENeCixT8oHbSpX4hzh0EcVBEoYuCDipKBwW/qg7uguDgXESrPoHnIITrnb3ioXAv/NokD8n7XMIlF18ymdQQrWAJNAK/9vvxCS7AdCQSSftgohmVU1CiuR/voE3HT0IycA5eXEheDZqYN6FzKUQcgk4XZ+EAhER+sf46Gx9dXgojn+7X/kB4JjwTngmnJsQe0g8CefQaMMx/swiwv16MiW2QAmcgqmh14AFsgXtQq+hR9ktxHEcmhPuwVB9U9HZQwXIl6FD0IakctpoNKxMf4E6q3yj6rVT+MtGvpXKG4+V9Wqvo4bS+glVFu6TeBfbBlaJPgWdQZdK3IBNPYMJC3yNmkeVngrdPeCY8E//fRI7lepdzG/lyOu8aLaAbHHGDsosd7pJmO+wA8Nn0F6du0LjrCBMxcMLdM/jDpxglm1LbCNgocInFeRITHdK8hGQKXMZ10Mt6nwMDIl9I3EWNs+MYNIByUGbTeUy6Ou6CZR5WhoFJsGYzxhvPFtMDLCuLeWIelIJZGolL2gxYcesVnQOLSpuoLzgZTC/iFYtxJsa5JHGnA30LMAAD0lS1tc7q6AAAAABJRU5ErkJggg==);
+    }
+
+.unstart .card-status:before {
+  content: "预告";
+  background: rgba(16,173,156,0.9);
+}
+.living .card-status:before {
+  content: "直播";
+  background: rgba(236,115,104,0.9);
+}
+.end .card-status:before {
+  content: "回放";
+  background: rgba(119,119,119,0.5);
+}
+.unstart .card-detail {
+  display: none;
+}
+.living .start-time,
+.end .start-time {
+  display: none;
+}

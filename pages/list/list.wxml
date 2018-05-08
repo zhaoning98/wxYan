@@ -1,0 +1,4 @@
+<!--pages/list/list.wxml-->
+<scroll-view scroll-y bindscrolltolower="getMoreData">
+  <card-list list="{{list}}" isNoMoreData="{{isNoMoreData}}"></card-list>
+</scroll-view>

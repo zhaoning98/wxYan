@@ -1,0 +1,38 @@
+<!--pages/mine/mine.wxml-->
+<view class="user-info-wrapper">
+  <view class="user-info">
+    <navigator url="../userinfo/userinfo">
+      <image class="user-icon" src=""></image>
+    </navigator>
+    <view class="info-detail">
+      <text class="user-title">13716020809</text>
+      <text class="user-name">ning</text>
+    </view>
+  </view>
+  <navigator class="info-link" url="../userinfo/userinfo">
+    <image class="set-icon" src="../../image/setting.png"></image>
+    <text class="set-text">个人信息</text>
+  </navigator>
+</view>
+
+<view class="row">
+  <navigator class="col-6" url="../list/list?title=浏览历史">
+    <image class="page-icon" src="../../image/my-collection.png"></image>
+    <text>浏览历史</text>
+  </navigator>
+  <navigator class="col-6" url="../list/list?title=我的足迹">
+    <image class="page-icon" src="../../image/my-feet.png"></image>
+    <text>我的足迹</text>
+  </navigator>
+</view>
+
+<view class="form">
+  <view class="btn-item">
+    <view class="item-label">修改密码</view>
+  </view>
+  <view class="btn-item">
+    <view class="item-label">客服中心</view>
+  </view>
+</view>
+
+<button class="logout-button">退出账户</button>

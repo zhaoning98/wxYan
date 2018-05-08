@@ -1,0 +1,30 @@
+/* component/card-list/card-list.wxss */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+  .col-6 {
+    width: 50%;
+    flex: 0 1 none;
+    box-sizing: border-box;
+  }
+  .col-6:nth-child(2n+1) {
+    padding-right: .15rem;
+  }
+  .col-6:nth-child(2n) {
+    padding-left: .15rem;
+  }
+.no-more-data,
+.no-data-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 13pt;
+  padding: 1rem 0;
+}
+.no-data-content {
+  height: 100%;
+  box-sizing: border-box;
+}

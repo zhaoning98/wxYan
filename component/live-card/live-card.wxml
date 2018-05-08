@@ -1,0 +1,18 @@
+<!--component/live-card/live-card.wxml-->
+<navigator url="../detail/detail" class="live-card-item unstart">
+  <view class="card-img-wrpper">
+    <text class="card-status"></text>
+    <!-- lazy-load  -->
+    <image class="card-img" 
+      src="http://p2xuvkfak.bkt.clouddn.com/FrBbmD8aCvN38j3tp9OkP5mw83le?imageMogr2/thumbnail/!370x200r/gravity/Center/crop/370x200"></image>
+    <count-down class="count-down-wrapper show-count-down"></count-down>
+  </view>
+  <view class="card-body">
+    <text class="card-title">直播研直播研直播研直播研直播研直播研直播研直播研直播研直播研直播研直播</text>
+    <text class="start-time">开播时间：03-28 00:00</text>
+    <view class="card-detail">
+      <text class="view-num">1314</text>
+      <text class="comment-num">9</text>
+    </view>
+  </view>
+</navigator>

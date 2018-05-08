@@ -1,0 +1,66 @@
+/* pages/live/live.wxss */
+.header {
+  border-bottom: 1px solid #ccc;
+}
+.header-label-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+  overflow-x: auto;
+  height: 3rem;
+}
+.header-label {
+  display: block;
+  padding: 0 .5rem;
+  flex: 0 1;
+  white-space: nowrap;
+  color: #333333;
+  height: 3rem;
+  line-height: 3rem;
+  box-sizing: border-box;
+  font-size: 11pt;
+}
+.header-label.active {
+  font-weight: 700;
+  color: #00b3a4;
+  border-bottom: 0.8vw solid #00b3a4;
+}
+.header-search-icon {
+  width: 13pt;
+  height: 13pt;
+  margin-left: .8rem;
+}
+
+.options-header {
+  position: fixed;
+  top: 3rem;
+  height: 3rem;
+  width: 100%;
+  padding: .5rem .8rem;
+  box-sizing: border-box;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  transition: top 300ms;
+}
+  .picker {
+    display: inline-block;
+    background: #f2f2f2;
+    color: #333;
+    padding: .35rem .8rem;
+    border-radius: .1rem;
+    font-size: 11pt;
+  }
+.list-container {
+  margin-top: 6rem;
+  flex: 1;
+  overflow-y: auto;
+  transition: margin-top 300ms;
+}
+
+.hide-options-header .options-header {
+  top: -3rem;
+}
+.hide-options-header .list-container {
+  margin-top: 3rem;
+}

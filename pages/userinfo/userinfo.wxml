@@ -1,0 +1,5 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view>
+    <button bindtap="chooseImage">更换头像</button>
+    <image src="{{usericonPath}}"></image>
+</view>

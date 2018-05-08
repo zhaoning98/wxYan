@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="page-container">
+  <view class="header">
+    <image class="app-logo" src="../../image/logo.png"></image>
+    <input class="search-input" placeholder="搜索" type="text" />
+    <image class="tofeet-logo" src="../../image/to-feet.png"></image>
+  </view>
+  <scroll-view class="main-container" scroll-y>
+    <swiper class="swiper-wrapper" indicator-dots="true"
+      autoplay="true" interval="3000" duration="300" circular="true">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <navigator url="../detail/detail">
+            <image src="{{item}}" class="slide-image" width="355" height="150"/>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view>
+      <section-list wx:for="{{imgUrls}}" wx:key="{{index}}"></section-list>
+    </view>
+  </scroll-view>
+</view>

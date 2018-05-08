@@ -1,0 +1,13 @@
+<!--pages/login/login.wxml-->
+<view class="login-wrapper">
+  <image bindtap="closePage" class="close-icon" src="../../image/close.png"></image>
+  <view class="login-content">
+    <image class="app-logo" src="../../image/app-logo.png"></image>
+    <text class="app-name">研直播</text>
+    <input class="input username-input"></input>
+    <input class="input pwd-input"></input>
+    <button>登录</button>
+    <navigator url="../register/register?title=navigate">忘记密码？</navigator>
+    <navigator url="../register/register?title=navigate">没有账号？点击注册新账号</navigator>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<!--component/card-list/card-list.wxml-->
+<view class="row">
+  <view class="col-6" wx:for="{{list}}" wx:key="{{index}}">
+    <live-card></live-card>
+  </view>
+</view>
+<view class="no-more-data" wx:if="{{isNoMoreData}}">没有更多数据了</view>
+<view class="no-data-content" wx:if="{{!list.length}}">暂无数据</view>

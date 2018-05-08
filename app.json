@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/live/live",
+    "pages/mine/mine",
+    "pages/list/list",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/userinfo/userinfo",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundColor": "#f4f5f6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "研直播",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/live/live",
+        "iconPath": "image/live.png",
+        "selectedIconPath": "image/live-active.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "image/mine.png",
+        "selectedIconPath": "image/mine-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

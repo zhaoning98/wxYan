@@ -1,0 +1,5 @@
+/* pages/detail/detail.wxss */
+video,
+live-player {
+  width: 100%;
+}

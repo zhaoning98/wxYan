@@ -1,0 +1,10 @@
+<!--component/count-down/count-down.wxml-->
+<view class="count-down-content">
+  <text class="count-text">距开播还有</text>
+  <text class="count-time">01</text>
+  <text class="count-text">天</text>
+  <text class="count-time">12</text>
+  <text class="count-text">时</text>
+  <text class="count-time">13</text>
+  <text class="count-text">分</text>
+</view>

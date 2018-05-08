@@ -1,0 +1,27 @@
+<!--pages/live/live.wxml-->
+<view class="page-container {{isShowOptions ? '' : 'hide-options-header'}}">
+  <view class="header">
+    <view class="header-label-wrapper">
+      <text class="header-label active">全部</text>
+      <text class="header-label" wx:for="{{typeArr}}" wx:key="{{index}}">{{item.itemName}}</text>
+    </view>
+    <image class="header-search-icon" src="../../image/search.png"></image>
+  </view>
+  <view class="options-header">
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="picker">{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}</view>
+    </picker>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">{{array[index]}}</view>
+    </picker>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">{{array[index]}}</view>
+    </picker>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">{{array[index]}}</view>
+    </picker>
+  </view>
+  <scroll-view bindscroll="toggleOptions" class="list-container" scroll-y bindscrolltolower="getMoreData">
+    <card-list list="{{list}}" isNoMoreData="{{isNoMoreData}}"></card-list>
+  </scroll-view>
+</view>

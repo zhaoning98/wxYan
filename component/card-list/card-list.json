@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "live-card": "../live-card/live-card"
+  }
+}

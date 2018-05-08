@@ -1,0 +1,17 @@
+<!--component/label-list/section-list.wxml-->
+<view class="section-list">
+  <view class="section-label">
+    <text class="label-text">直播预告</text>
+    <navigator class="more-text" url="../live/live" open-type="switchTab">
+      <text>更多</text>
+    </navigator>
+  </view>
+  <view>
+    <live-card show-count-down="show-count-down"></live-card>
+    <view class="row">
+      <view class="col-6" wx:for="{{list}}" wx:key="{{index}}">
+        <live-card></live-card>
+      </view>
+    </view>
+  </view>
+</view>
